@@ -1,0 +1,131 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: tahoma;
+  text-align: center;
+}
+
+header {
+  letter-spacing: 6px;
+  color: white;
+  background: royalblue;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  width: 100%;
+}
+
+section {
+  padding: 50px;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: lightpink;
+}
+ol.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ol.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ol.breadcrumb li + li::before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ol.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ol.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 50em) {
+  .card {
+    border: 1px solid #ccc;
+    background-image: url(images/blessingjohn.jpg);
+    background-color: ivory;
+    padding: 30px 15px 30px;
+    margin: 25px;
+    flex-basis: 325px;
+    box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.3);
+  }
+  header h1 {
+    font-size: 5em;
+  }
+}
+
+img {
+  width: 130px;
+  height: 180px;
+}
+button,
+.button {
+  background-color: royalblue;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px;
+  width: 85px;
+  margin-bottom: 10px;
+}
+.icons {
+  font-size: 8em;
+  padding: 25px;
+}
+p {
+  font-size: 15px;
+  /*font-weight: bold;*/
+}
+td {
+  padding: 10px;
+}
+table {
+  margin: auto;
+  border: 20px;
+}
+.orderform {
+  background-color: #29c1c4;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: grey;
+}
+.foot-container {
+  display: flex;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+}
+.butt {
+  padding: 10px;
+  border-radius: 1.6em;
+}
+/*
+.grey-bg {
+  background-color: grey;
+  padding-top: 12px;
+}
+*/
+#my-order {
+  background-color: #29c1c4;
+  padding: 25px;
+  display: none;
+}
+section {
+  margin: 0%;
+}

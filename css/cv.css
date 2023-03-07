@@ -1,0 +1,46 @@
+header {
+    text-align: center;
+    background: lightblue;
+    border: solid blue;
+    border-width: 10px 0px 10px 0px;
+    margin: 0 auto;
+    border-left: 10px solid #d6d5cd;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 70% turquoise;
+    border: solid 10px white;
+    background: blue;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+h3 {
+     background-color: #c8a2c8;
+     padding: 15px;
+     font-size: 1.5em;
+     border-left: 10px solid #d6d5cd;
+}
+
+header, h3 {
+    color: white;
+    font-family: "Arial Black",sans-serif;
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+p,ul{
+    list-style: none;
+    padding-left: 50px;
+    font-size: 1.3em;
+}
+.emoji {
+    font-size: 8em;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DreamyGlow Organics</title>
+    <link rel="stylesheet" type="text/css" href="css/dreamyglow.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DreamyGlow Organics</h1>
+      <nav role="navigation" aria-label="main menu">
+        <ol class="breadcrumb">
+          <li><a href="https://www.google.com">home</a></li>
+          <li><a href="#foooter1">about us</a></li>
+          <li><a href="#">team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ol>
+      </nav>
+      <h4>Our existence is for your beautiful skin</h4>
+    </header>
+
+    <!--intro section-->
+    <section>
+      <h2>WELCOME:</h2>
+      <p>
+        We're DreamyGlow Organics, located in Calabar, Nigeria. We've been in
+        the organic skincare business since October 2020. We believe everyone
+        deserves a beautiful and healthy skin, that's why we exist
+        <br />
+        <br />
+      </p>
+    </section>
+
+    <section class="container">
+      <h2></h2>
+      <article class="card">
+        <img src="images/blessingjohn.jpg" alt="CEO" />
+        <!--<div class="icons">&#x1F60E</div>-->
+
+        <h3>BLESSING JOHN</h3>
+        <p>
+          Skin care specialist and Sole Proprietor of <br />
+          DreamyGlow Organics.
+        </p>
+        <button>Contact</button>
+      </article>
+    </section>
+
+    <!--about us section-->
+    <section class="orderform">
+      <h2>MY ORDER FORM:</h2>
+
+      <form id="my-form" action="" class="card">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" size="25" name="my-name" /></td>
+          </tr>
+
+          <tr>
+            <td>Address:</td>
+            <td><input type="text" size="25" name="my-address" /></td>
+          </tr>
+
+          <tr>
+            <td>Tel:</td>
+            <td><input type="tel" size="11" name="my-contact" /></td>
+          </tr>
+          <tr>
+            <td>Item:</td>
+            <td>
+              <select name="skincareproduct">
+                <option></option>
+                <option>Whitening Set:</option>
+                <option>Skin Glow Set</option>
+                <option>Skin Repair Set</option>
+                <option></option>
+                <option></option>
+                <option></option>
+                Whitening set,Skin repair set ,Skin Glow set Blessing Molato
+                whitening set Blessing Blessing John Melanin glow set,kiddies
+                set,hot chocolate lotion
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Quantity:</td>
+            <br />
+            <td>
+              <input
+                type="number"
+                name="my-qty"
+                value=""
+                min="1"
+                max="%= v %"
+              />
+
+              <br />
+              <!--<small>you can order as much as you want,we'll make it available.</small>-->
+            </td>
+          </tr>
+        </table>
+        <br />
+        <tr>
+          <br />
+        </tr>
+        <div class="grey-bg">
+          <tr>
+            <td colspan="2">
+              <input
+                class="butt"
+                type="button"
+                value="Process Order"
+                onclick="placeOrder();"
+                style="background-color: yellow"
+              />
+              <input
+                class="butt"
+                type="reset"
+                value="clear"
+                style="background-color: red"
+                onclick="document.getElementById('my-order').style.display = 'none'"
+                ;
+              />
+            </td>
+          </tr>
+          <button class="butt" style="background-color: green">Submit</button>
+        </div>
+      </form>
+      <div id="my-order"></div>
+    </section>
+    <footer id="footer1">
+      <div>
+        <h3>Thanks for visiting</h3>
+      </div>
+      <div class="foot-container">
+        <article class="card">
+          <h3>Get in touch</h3>
+          <p>Perhaps the best place to get your skin healthy</p>
+        </article>
+        <br />
+        <br />
+        <article class="card">
+          <h3>Contact Us</h3>
+          <p>
+            We would love to hear from you.
+            <br />
+            Call or email us. <br />
+            Mobile: 072345 633 // Tel: 012 343 3432
+          </p>
+        </article>
+      </div>
+      <br />
+      <table>
+        <tr>
+          <th>male</th>
+          <th>female</th>
+        </tr>
+        <tr>
+          <td>mark</td>
+          <td>miriam</td>
+        </tr>
+        <tr>
+          <td>john</td>
+          <td>mary</td>
+        </tr>
+      </table>
+      <small>
+        &copy 2022 DreamyGlow Organics Inc. All rights reserved.<time
+          datetime="2022-07-08"
+          >may 8,2022.</time
+        ></small
+      >2<sup
+        ><small><small> 5</small></small></sup
+      ><sub>8</sub>2<sup
+        ><small><small> 5</small></small></sup
+      ><sub>8</sub>
+    </footer>
+    <!--javascript-->
+    <script>
+      function placeOrder() {
+        var orderForm = document.getElementById("my-form");
+        results = "<h3>Success!</h3> Here is your order.";
+        results += "<br>Name: " + orderForm.elements["my-name"].value;
+        results += "<br>Address: " + orderForm.elements["my-address"].value;
+        results += "<br>Tel: " + orderForm.elements["my-contact"].value;
+        results += "<br>Item: " + orderForm.elements["skincareproduct"].value;
+        results += "<br>Quantity: " + orderForm.elements["my-qty"].value;
+
+        var orderResults = document.getElementById("my-order");
+        orderResults.style.display = "block";
+        orderResults.innerHTML = results;
+      }
+    </script>
+  </body>
+</html>
